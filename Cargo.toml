@@ -1,0 +1,32 @@
+[package]
+name = "SalesMonitoring"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-cors = "0.6.4"
+actix-web = "4"
+serde = { version = "1.0.104", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.11.0", features = ["json"] }
+chrono = "0.4"
+serde_json = "1.0"
+tiberius = "0.12.2"
+tokio-util = { version = "0.6", features = ["full"]}
+futures-util = "0.3.28"
+log = "0.4"
+fern = { version = "0.6.2", features = ["date-based"] }
+log2 = "0.1.7"
+env_logger = "0.10.0"
+ring = "0.16"
+base64 = "0.13"
+amiquip = "0.4.2"
+jsonwebtoken = "9.2.0"
+hex = "0.4.3"
+aes="0.7.5"
+block-modes="0.8.1"
+hex-literal="0.3.3"
+tokio-postgres = "0.7.13"
+bigdecimal = "0.4"

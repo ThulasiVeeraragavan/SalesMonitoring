@@ -1,0 +1,12 @@
+{
+    "db_host":"localhost",
+    "db_port":5432,
+    "db_name":"sales_data",
+    "db_user_name":"postgres",
+    "db_password":"Thulasi@9102002",
+    "api_port":8100,
+    "toggle_log":1,
+    "log_file_path":"",
+    "error_log":0,
+    "io_log":0
+}

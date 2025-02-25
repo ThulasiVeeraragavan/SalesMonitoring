@@ -43,16 +43,3 @@ pub struct TopNFilter{
 
 
 
-#[allow(non_snake_case)]
-#[derive(Serialize,Deserialize,Debug)]
-pub struct HeaderModel{
-    pub user_id:String,
-    pub channel_id:i32,
-    pub version:String,
-    pub TVN:String,
-    pub SNO:String,
-    pub language_id:i32,
-    pub country_code:String,
-    pub ip_address:String,
-}
-

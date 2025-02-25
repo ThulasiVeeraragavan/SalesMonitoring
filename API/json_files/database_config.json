@@ -6,7 +6,8 @@
     "db_password":"Thulasi@9102002",
     "api_port":8100,
     "toggle_log":1,
-    "log_file_path":"",
+    "log_file_path":"C:/api_log/",
     "error_log":0,
-    "io_log":0
+    "io_log":0,
+    "csv_path":"D:/Projects/SalesMonitoring/sample_data.csv"
 }

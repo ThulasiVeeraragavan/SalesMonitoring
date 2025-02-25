@@ -1,0 +1,237 @@
+{
+	"info": {
+		"_postman_id": "87db780c-2264-46f5-8784-d6b4751665d8",
+		"name": "SalesMonitoring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "34498825"
+	},
+	"item": [
+		{
+			"name": "total_revenue",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"start_date\":\"2023-12-01\",\r\n   \"end_date\":\"2024-12-31\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8100/v1/total_revenue/"
+			},
+			"response": []
+		},
+		{
+			"name": "total_customers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"start_date\":\"2023-12-01\",\r\n   \"end_date\":\"2024-12-31\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8100/v1/total_customers/"
+			},
+			"response": []
+		},
+		{
+			"name": "total_orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"start_date\":\"2023-12-01\",\r\n   \"end_date\":\"2024-12-31\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8100/v1/total_orders/"
+			},
+			"response": []
+		},
+		{
+			"name": "average_order_value",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"start_date\":\"2023-12-01\",\r\n   \"end_date\":\"2024-12-31\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8100/v1/average_order_value/"
+			},
+			"response": []
+		},
+		{
+			"name": "total_revenue_by_product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"start_date\":\"2023-12-01\",\r\n   \"end_date\":\"2024-12-31\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8100/v1/total_revenue_by_product/"
+			},
+			"response": []
+		},
+		{
+			"name": "total_revenue_by_category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"start_date\":\"2023-12-01\",\r\n   \"end_date\":\"2024-12-31\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8100/v1/total_revenue_by_category/"
+			},
+			"response": []
+		},
+		{
+			"name": "total_revenue_by_region",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"start_date\":\"2023-12-01\",\r\n   \"end_date\":\"2024-12-31\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8100/v1/total_revenue_by_region/"
+			},
+			"response": []
+		},
+		{
+			"name": "customer_lifetime_value",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"start_date\":\"2023-12-01\",\r\n   \"end_date\":\"2024-12-31\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8100/v1/customer_lifetime_value/"
+			},
+			"response": []
+		},
+		{
+			"name": "top_n_products_overall",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numbers\":3,\r\n   \"start_date\":\"2023-12-01\",\r\n   \"end_date\":\"2024-12-31\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8100/v1/top_n_products_overall/"
+			},
+			"response": []
+		},
+		{
+			"name": "top_n_products_by_category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numbers\":2,\r\n    \"filterby\":\"Electronics\",\r\n   \"start_date\":\"2023-12-01\",\r\n   \"end_date\":\"2024-12-31\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8100/v1/top_n_products_by_category/"
+			},
+			"response": []
+		},
+		{
+			"name": "top_n_products_by_region",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numbers\":2,\r\n    \"filterby\":\"North America\",\r\n   \"start_date\":\"2023-12-01\",\r\n   \"end_date\":\"2024-12-31\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8100/v1/top_n_products_by_region/"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8100",
+			"type": "string"
+		}
+	]
+}

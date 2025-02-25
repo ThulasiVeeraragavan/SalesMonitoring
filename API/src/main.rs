@@ -1,11 +1,9 @@
 mod api;
 mod models;
 mod repository;
-mod logger;
 mod encryptions;
-use actix_web::{web, App, HttpServer,http::header,web::Data};
+use actix_web::{web, App, HttpServer};
 use actix_cors::Cors;
-use serde_json::json;
 use crate::api::routes::*;
 use crate::models::request_models::*;
 use crate::api::endpoints::get_version_handler;
@@ -14,8 +12,7 @@ use chrono::Utc;
 use actix_web::middleware::Logger;
 use env_logger::Env;
 use std::path::Path;
-use std::fs::File;
-use std::sync::{Arc, Mutex};
+use std::fs::{self, File};
 #[allow(non_snake_case)]
 
 
@@ -25,7 +22,14 @@ fn setup_logging() -> Result<(), Box<dyn std::error::Error>> {
     let file = File::open(json_file_path)?;
     let games:GlobalConfigModel=serde_json::from_reader(file)?;
     let path = Path::new(&games.log_file_path);
-
+    if !path.exists() {
+        match fs::create_dir_all(&path) {
+            Ok(_) => println!("Directory created successfully."),
+            Err(e) => eprintln!("Failed to create directory: {}", e),
+        }
+    } else {
+        println!("Directory already exists.");
+    }
     fern::Dispatch::new()
         .format(|out, message, record| {
             out.finish(format_args!(

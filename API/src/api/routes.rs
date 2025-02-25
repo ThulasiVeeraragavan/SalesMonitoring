@@ -4,7 +4,6 @@ use crate::api::endpoints::*;
 
 
 pub fn init_routes_v1(cfg: &mut web::ServiceConfig) {
-    cfg.service(get_token_handler);
     cfg.service(total_revenue);
     cfg.service(total_revenue_by_product);
     cfg.service(total_revenue_by_category);

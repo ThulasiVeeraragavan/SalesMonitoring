@@ -1,5 +1,4 @@
 use log::info;
-use serde_json::Value;
 use serde_json::json;
 
 use crate::repository::database_connection::db_connection;

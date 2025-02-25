@@ -12,6 +12,7 @@ Please create all functions provided in the `db_scripts` directory.
 ### CSV Loader
 **Software Requirement:** Python 3.8 or Above (I'm using 3.12)
 
+Note: Please configure the database credentials in the csv_up.py file.
 1. Install dependencies:
    ```sh
    pip install -r req.txt

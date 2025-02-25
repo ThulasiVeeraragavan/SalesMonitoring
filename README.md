@@ -1,7 +1,7 @@
 # Sales Monitoring Project
 
 ## Database Schema
-![Database Schema](./schema_diagram/database_schema.jpeg)
+![Database Schema](schema_diagram/database_schema.jpeg)
 
 ## Setup Instructions
 

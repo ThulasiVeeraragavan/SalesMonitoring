@@ -1,7 +1,7 @@
 # Sales Monitoring Project
 
 ## Database Schema
-![Database Schema](database_schema.jpeg)
+![Database Schema](https://github.com/ThulasiVeeraragavan/SalesMonitoring/tree/main/schema_diagram/database_schema.jpeg)
 
 ## Setup Instructions
 

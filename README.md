@@ -7,7 +7,7 @@
 ![Database Schema](schema_diagram/schema_diagram.jpeg)
 
 ### Database Setup
-Please create all functions provided in the `db_script` directory.
+Please create all functions provided in the `db_scripts` directory.
 
 ### CSV Loader
 **Software Requirement:** Python 3.8 or Above (I'm using 3.12)

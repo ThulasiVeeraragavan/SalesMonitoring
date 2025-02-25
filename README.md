@@ -1,11 +1,11 @@
 # SalesMonitoring
 
+
 ## Setup Instructions
 
 ## Database Schema
 ![Database Schema](schema_diagram/schema_diagram.jpeg)
 
-![Database Schema](database_schema.jpeg)
 ### Database Setup
 Please create all functions provided in the `db_script` directory.
 
